@@ -5,6 +5,7 @@ module not_gate (
     output out
 );
     // TO DO
+    assign out = ~in;
 
 endmodule
 
@@ -14,6 +15,7 @@ module or_gate (
     output out
 );
     // TO DO
+    assign out = in1|in2;
     
 endmodule
 
@@ -23,6 +25,7 @@ module and_gate (
     output out
 );
     // TO DO
+    assign out=in1&in2;
     
 endmodule
 
@@ -32,5 +35,6 @@ module xor_gate(
     output out
 );
     // TO DO
+    assign out=in1^in2;
 
 endmodule
