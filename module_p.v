@@ -26,4 +26,23 @@ module module_p(
     // modules a1 and a2 are given
     // you can only define new registers or wires, and use module a1 and a2
 
+    wire res1,res2,res3;
+    a1 run_1(
+        .in1(in1),
+        .in2(in2),
+        .out(res1)
+    );
+    a2 run_2(
+        .in(res1),
+        .out(res2)
+    );
+    a2 run_3(
+        .in(in2),
+        .out(res3)
+    );
+    a1 run_4(
+        .in1(res2),
+        .in2(res3),
+        .out(out)
+    );
 endmodule
