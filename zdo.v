@@ -7,12 +7,12 @@ module zdo (
         $dumpvars(0,zdo);
         #300 $finish;
     end*/
-    //wire tmp=rst?0:~tmp;
-    reg tem=0;
+    wire tmp=rst?0:~tmp;
+    /*reg tem=0;
     always @(*) begin
         tem<=1;
     end
     always @(tem) begin
         tem<=~tem;
-    end
+    end*/
 endmodule
